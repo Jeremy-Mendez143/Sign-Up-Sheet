@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Reset Sheet-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="Proj3.css">
+    <title>Project 3 - Jeremy Mendez</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <header>
+                <h1>Sign Up</h1>
+            </header>
+
+                <form action="#" id="form" class="sign__up">
+                    <fieldset id="personal__info">
+                        <legend>Personal Information</legend>
+
+                        <div class="input__box">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Enter Name" required>
+                     </div>
+            
+                        <div class="input__box">
+                            <label for="address">Street Address</label>
+                            <input id="address" type="text" placeholder="Enter Street Address" required>
+                        </div>
+            
+                        <div class="input__box">
+                            <label for="city">City</label>
+                            <input id="city" type="text" placeholder="Enter City" required>
+                     </div>
+            
+                        <div class="input__box">
+                         <label for="state">State</label>
+                            <div class="select__box">
+                                <select name="State Select" id="state" required>
+                                <option value="" selected disabled>Choose A State</option>
+                                <option value="1">N.H</option>
+                                <option value="2">N.J</option>
+                                <option value="3">N.M</option>
+                                <option value="4">N.Y</option>
+                                </select>
+                            </div>
+                        </div>        
+            
+                        <div class="input__box">
+                            <label for="zip">Zip Code</label>
+                            <input id="zip" type="number" placeholder="Enter Zip Code" required>
+                        </div>
+            
+                        <div class="input__box">
+                            <label for="age">Age</label>
+                            <input id="age" type="number" placeholder="Enter Age" required>
+
+                        </div>
+                        
+                    </fieldset>
+                    <br>
+                    <fieldset id="communication__preferences">
+                        <legend>Communication Preferences</legend>
+                        <div class="input__box">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="Enter Email Address" required>
+                    </div>
+                    <div class="subscribe">
+                        <input type="checkbox" name="subscribe" id="check-sub">
+                        <label for="check-sub">Subscribe to recieve promotional emails. (Optional)</label>
+                    </div>
+                    </fieldset>
+
+                    <div class="agreements">
+                        <input type="checkbox" name="agree" id="check-agree" required>
+                        <label for="check-agree">Agree to our Terms & Conditions and the Privacy Policy. (Required)</label>
+                    </div>
+                
+                    <div class="button">
+                        <button type="submit">Sign-Up</button>
+                    </div>
+                </form>
+        
+
+            <footer>
+                <p class="copyright">Copyright &copy; Jeremy Mendez 2023</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

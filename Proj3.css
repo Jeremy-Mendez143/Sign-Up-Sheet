@@ -1,0 +1,126 @@
+/*Mobile/Base Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 20px;
+    background: linear-gradient(to bottom, #F1F6F9, #B0DAFF) ;
+}
+.container{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom, #B0DAFF, #F1F6F9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header{
+    color: #333;
+    font-weight: 500;
+}
+legend{
+    color: #333;
+    font-weight: 400;
+}
+.input__box{
+    width: 100%;
+    margin-top: 20px;
+}
+.select__box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+}
+label{
+    color: #333;
+}
+.sign__up :where(.input__box input, .select__box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    color: #707070;
+    background: white;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.subscribe{
+    padding-top: 20px;
+}
+.agreements{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.button{
+    margin-top: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+/*Tablet Styles*/
+@media screen and (min-width: 768px) {
+    .sign__up{
+        flex-wrap: wrap;
+    }
+    body{
+        font-size: 1.5rem;
+    }
+    .input__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    label{
+        color: #333;
+        margin-right: 10px;
+        width: 100%;
+    }
+}
+/*Desktop Styles*/
+@media screen and (min-width: 1024px) {
+    .sign__up{
+        flex-wrap: wrap;
+    }
+    body{
+        font-size: 2rem;
+    }
+    .input__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    label{
+        color: #333;
+        margin-right: 10px;
+        width: 100%;
+    }
+}
+
+
+
